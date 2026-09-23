@@ -1,0 +1,50 @@
+[
+  {
+    "id": "displacement",
+    "name": "Displacement",
+    "prerequisites": [],
+    "block_ids": [],
+    "syllabus_ref": "FSc Physics Ch.3 §3.1",
+    "common_misconceptions": ["confusing displacement with distance travelled"]
+  },
+  {
+    "id": "velocity",
+    "name": "Velocity",
+    "prerequisites": ["displacement"],
+    "block_ids": [],
+    "syllabus_ref": "FSc Physics Ch.3 §3.2",
+    "common_misconceptions": ["treating speed and velocity as identical"]
+  },
+  {
+    "id": "acceleration",
+    "name": "Acceleration",
+    "prerequisites": ["velocity"],
+    "block_ids": [],
+    "syllabus_ref": "FSc Physics Ch.3 §3.3",
+    "common_misconceptions": ["assuming acceleration means speeding up only"]
+  },
+  {
+    "id": "newtons_second_law",
+    "name": "Newton's second law",
+    "prerequisites": ["acceleration"],
+    "block_ids": ["block_projectile_motion"],
+    "syllabus_ref": "FSc Physics Ch.3 §3.4",
+    "common_misconceptions": ["confusing mass with weight"]
+  },
+  {
+    "id": "friction",
+    "name": "Friction",
+    "prerequisites": ["newtons_second_law"],
+    "block_ids": [],
+    "syllabus_ref": "FSc Physics Ch.4 §4.1",
+    "common_misconceptions": ["assuming friction always opposes motion direction of travel, not relative sliding"]
+  },
+  {
+    "id": "circular_motion",
+    "name": "Circular motion",
+    "prerequisites": ["newtons_second_law"],
+    "block_ids": [],
+    "syllabus_ref": "FSc Physics Ch.4 §4.5",
+    "common_misconceptions": ["believing an outward 'centrifugal force' is real in the inertial frame"]
+  }
+]
