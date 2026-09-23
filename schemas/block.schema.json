@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Block",
+  "type": "object",
+  "required": ["id", "name", "render_engine", "concept_ids", "parameters", "component_path"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique snake_case identifier, e.g. block_projectile_motion"
+    },
+    "name": { "type": "string" },
+    "render_engine": {
+      "type": "string",
+      "enum": ["matter-js", "canvas", "svg"],
+      "description": "Not hardcoded to matter.js — future topics (waves, circuits) will need other engines"
+    },
+    "concept_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Concept graph node(s) this block teaches"
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Parameter schema the LLM fills per script beat, e.g. { angle: number, v0: number, gravity: number }"
+    },
+    "component_path": {
+      "type": "string",
+      "description": "Path to the Remotion component implementing this block"
+    },
+    "default_duration_seconds": { "type": "number" }
+  }
+}
