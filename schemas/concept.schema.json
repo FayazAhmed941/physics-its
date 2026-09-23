@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Concept",
+  "type": "object",
+  "required": ["id", "name", "prerequisites", "block_ids"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique snake_case identifier, e.g. newtons_second_law"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable concept name"
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of concepts that must be mastered first"
+    },
+    "block_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of blocks in the block library that teach this concept"
+    },
+    "syllabus_ref": {
+      "type": "string",
+      "description": "Source syllabus/textbook reference this was extracted from"
+    },
+    "common_misconceptions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Used for doubt-query matching against free-text confusion"
+    }
+  }
+}
