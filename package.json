@@ -1,0 +1,12 @@
+{
+  "name": "physics-its",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Doubt-aware physics lecture generator / ITS starter scaffold",
+  "scripts": {
+    "dev": "echo \"backend not yet scaffolded — first Claude Code task\"",
+    "render": "echo \"remotion render command goes here once ProjectileMotion.tsx is complete\""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
