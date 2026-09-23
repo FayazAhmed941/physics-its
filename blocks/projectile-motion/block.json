@@ -1,0 +1,14 @@
+{
+  "id": "block_projectile_motion",
+  "name": "Projectile motion",
+  "render_engine": "matter-js",
+  "concept_ids": ["newtons_second_law"],
+  "parameters": {
+    "angle_degrees": { "type": "number", "min": 1, "max": 89, "default": 45 },
+    "initial_velocity": { "type": "number", "min": 1, "max": 50, "default": 20 },
+    "gravity": { "type": "number", "min": 1, "max": 20, "default": 9.8 },
+    "show_trajectory": { "type": "boolean", "default": true }
+  },
+  "component_path": "blocks/projectile-motion/ProjectileMotion.tsx",
+  "default_duration_seconds": 8
+}
